@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("./fonts/SegoeUIBold.woff");
+}
+
+@font-face {
+    font-family: "Open Sans Semi Bold";
+    src: url("./fonts/OpenSansSemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("./fonts/OpenSansRegular.ttf");
+}

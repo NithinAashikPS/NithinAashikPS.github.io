@@ -1,0 +1,241 @@
+:root {
+    --color-primary: #2A135B;
+    --color-ascent: #FFFFFF;
+    --color-black: #000000;
+    --color-inactive: #999999;
+    --color-shadow: #afafaf;
+    --color-grey-bg: #ececec;
+    --color-transparent: #ffffff00;
+    --color-gradient1-start: #00D3FF;
+    --color-gradient1-end: #DE00D6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin: 0;
+    color: var(--color-ascent);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.section1-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    width: 95%;
+    height: 5em;
+    padding-top: 55px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-ascent);
+    font-family: "Segoe UI Bold";
+}
+
+h3 {
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+li a {
+    color: var(--color-inactive);
+}
+
+.active a {
+    border-bottom: 2px solid var(--color-ascent);
+    color: var(--color-ascent);
+}
+
+li:hover a {
+    border-bottom: 2px solid var(--color-ascent);
+    color: var(--color-ascent);
+}
+
+.section1-container-body {
+    padding-left: 14.7%;
+    padding-right: 14.7%;
+    padding-top: 14%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Open Sans Semi Bold";
+}
+
+.description {
+    width: 45%;
+    margin-right: 0;
+    font-size: 17px;
+    color: var(--color-inactive);
+    font-family: "Open Sans Regular";
+}
+
+.hire-me {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 1em 3em 1em 3em;
+    color: var(--color-ascent);
+    font-family: "Open Sans Semi Bold";
+    border: 0;
+    border-radius: 3px;
+    background: linear-gradient(to right, var(--color-gradient1-start), var(--color-gradient1-end));
+}
+
+.hire-me:hover {
+    box-shadow: 1px 1px 10px var(--color-gradient1-start);
+    transition: all ease 0.2s
+}
+
+.section2-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 280vh;
+    width: 70.8%;
+    background-color: var(--color-grey-bg);
+    transform: translate(20.6%, 110.8vh);
+}
+
+.skills {
+    background-color: var(--color-ascent);
+    margin: 0;
+    height: 35%;
+}
+
+h2,
+h2 a {
+    color: var(--color-black);
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans Semi Bold";
+}
+
+.skills-body {
+    width: 100%;
+    height: 100%;
+}
+
+.services-body {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.skills-item {
+    height: 90px;
+    width: 15%;
+    margin: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--color-ascent);
+    box-shadow: 1px 1px 10px var(--color-shadow);
+}
+
+.skills-item img {
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+}
+
+h6 {
+    color: var(--color-black);
+    margin: 0;
+    font-family: "Open Sans Regular";
+}
+
+.skills-item:hover,
+.services-item:hover {
+    box-shadow: 1px 1px 10px var(--color-primary);
+    transition: all ease 0.2s
+}
+
+.services {
+    margin: 0;
+    height: 30%;
+}
+
+.services-item {
+    height: 350px;
+    width: 22%;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--color-ascent);
+    box-shadow: 1px 1px 10px var(--color-shadow);
+}
+
+.services-item img {
+    height: 60%;
+    width: 70%;
+}
+
+.services-item h6 {
+    font-size: 13px;
+}
+
+.more:after {
+    content: ' \2192';
+}
+
+h2 a {
+    font-family: "Open Sans Regular";
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.services-item p {
+    margin: 15px;
+    margin-top: 25px;
+    font-size: 13px;
+    color: var(--color-black);
+    font-family: "Open Sans Regular";
+}
+
+.recent-works {
+    margin: 0;
+    height: 50%;
+    background-color: var(--color-ascent);
+}
